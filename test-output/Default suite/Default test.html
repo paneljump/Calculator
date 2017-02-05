@@ -1,0 +1,304 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>45/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 04 21:50:26 PST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3265 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.TestBrain.mathErrorTest()'><b>mathErrorTest</b><br>Test class: test.TestBrain<br>Parameters: 1.0, divide by 0, “5/0”, “Error: cannot divide by 0”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.mathErrorTest()'><b>mathErrorTest</b><br>Test class: test.TestBrain<br>Parameters: 2.0, log of negative, “ln(-2)”, “Error in computation ln(-2.0)”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.mathErrorTest()'><b>mathErrorTest</b><br>Test class: test.TestBrain<br>Parameters: 3.0, Tan 90, “tan(90)”, “16331239353195370”, This should be infinite but I guess double rounds a little</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.mathErrorTest()'><b>mathErrorTest</b><br>Test class: test.TestBrain<br>Parameters: 4.0, acsc out of range, “acsc(.25)”, “Error in computation acsc(0.25)”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveAllTest()'><b>solveAllTest</b><br>Test class: test.TestBrain<br>Parameters: 1.0, Simplest test – one operation, “5+3”, “8.0”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveAllTest()'><b>solveAllTest</b><br>Test class: test.TestBrain<br>Parameters: 2.0, Two operations, no parentheses, “5+3*4”, “17.0”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveAllTest()'><b>solveAllTest</b><br>Test class: test.TestBrain<br>Parameters: 3.0, Two operations, parentheses, “(5+3)*4”, “32.0”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveAllTest()'><b>solveAllTest</b><br>Test class: test.TestBrain<br>Parameters: 4.0, Two operations, nested parentheses, “((5+3))*4”, “32.0”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 1.0, Simplest test – one operation, “5+3”, “8.0”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 2.0, Two operations, no parentheses, “5+3*4”, “5+12.0”, converts from int to double and then back to string</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 3.0, Two operations, parentheses, “(5+3)*4”, “8.0*4”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 4.0, Two operations, nested parentheses, “((5+3))*4”, “(8.0)*4”, Solve innermost and drop those parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 5.0, Demonstrate order of operations:, “5*(3+4!)-3^3”, “5*(3+24)-3^3”, NOTE: factorials make integers, not doubles (no decimal)</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 6.0, Demonstrate order of operations:, “5*(3+24.0)-3^3”, “5*27.0-3^3”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 7.0, Demonstrate order of operations:, “5*27.0-3^3”, “5*27.0-27.0”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 8.0, Demonstrate order of operations:, “5*27.0-27.0”, “135.0-27.0”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 9.0, Demonstrate order of operations:, “135.0-27.0”, “108.0”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 10.0, Order with parenOp, “cos(5*(3+4!)-3^3)”, “cos(5*(3+24)-3^3)”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 11.0, Order with parenOp, “cos(5*(3+24.0)-3^3)”, “cos(5*27.0-3^3)”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 12.0, Order with parenOp, “cos(5*27.0-3^3)”, “cos(5*27.0-27.0)”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.solveStepTest()'><b>solveStepTest</b><br>Test class: test.TestBrain<br>Parameters: 13.0, Order with parenOp, “cos(60)”, “0.50000000000000011102230246251565404236316680908203125”, WARNING: doubles lose precision...will this, or its string interpretation, vary by system?</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 1.0, no parentheses, “5+3*4”, “5+3*4”, no change</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 2.0, parentheses surrounding entire expression, “(5+3*4)”, “5+3*4”, remove outer parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 3.0, parentheses surrounding part of expression, “(5+3)*4”, “5+3”, step in</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 4.0, nested parentheses, “((5+3)*4)^2”, “(5+3)*4”, step in</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 5.0, Expression with a parentheses operator that does NOT contain operators, “5+3*4-sin(45)”, “45”, step in</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 6.0, Expression with a parentheses operator where parenOp also contains an operator, “5+3*4-sin(5!)”, “5!”, step in</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 7.0, Expression with multiple parentheses operators, “5+3*4-sin(60)+cos(45)”, “60”, step in</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 8.0, Expression with mix of parentheses operators, “5+3*4-sin(5!)+cos(45)”, “5!”, step in</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 9.0, Expression with mix of parentheses operators, “5+3*4-sin(45)+cos(5!)”, “45”, step in</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stepInTest()'><b>stepInTest</b><br>Test class: test.TestBrain<br>Parameters: 10.0, Nested parentheses inside paren op, “5+3*4-sin((45))”, “(45)”, null</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 1.0, Expression with no parentheses should give no parentheses error (-1), “5+3*4”, -1.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 2.0, Proper parentheses surrounding string, “(5+3*4)”, -1.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 3.0, Proper parentheses with more string at end, “(5+3)*4”, -1.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 4.0, Proper parentheses with more string at beginning, “5+(3*4)”, -1.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 5.0, Proper parentheses with string before and after, “5+(3*4)/2”, -1.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 6.0, Proper parentheses nested, “(5+(3))*4”, -1.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 7.0, Expression with no closed parentheses should return index of unmatched '(', “(5+3*4”, 0.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 8.0, Expression with no open parentheses, should return index of unmatched ')', “5+3)*4”, 3.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 9.0, Expression with extra open parentheses, returns index of unmatched '(', “(5+3)*(4”, 6.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 10.0, Expression with extra closed parentheses, returns index of unmatched ')', “(5+3)*4)”, 7.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 11.0, Expression with extra open parentheses, nested, returns index of unmatched '(', “(5+3()*4”, 0.0, parentheses</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 12.0, Expression with invalid characters, should return index of first invalid, “5+3$”, 3.0, characters</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 13.0, Expression with invalid characters, should return index of first invalid, “5@+3$”, 1.0, characters</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+<tr>
+<td title='test.TestBrain.stringValidTest()'><b>stringValidTest</b><br>Test class: test.TestBrain<br>Parameters: 14.0, Empty string, “”, -1.0, empty</td>
+<td></td>
+<td>0</td>
+<td>test.TestBrain@3ecf72fd</td></tr>
+</table><p>
+</body>
+</html>

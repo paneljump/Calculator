@@ -5,10 +5,36 @@ package brain;
  */
 
 import java.lang.Math;
+import java.math.BigDecimal;
+
 //import java.math.*;
 import brain.SimpleAnswer;
 
 public class Evaluator {
+	
+	public SimpleAnswer solveOp(String before, String after, String opTxt, boolean parenOpQ, boolean inRadians) {
+		SimpleAnswer s = new SimpleAnswer();
+		double bD,aD;
+		try{
+			bD=Double.parseDouble(before);
+		}
+		catch(Exception e) { bD=0.0;}
+		try{
+			aD=Double.parseDouble(after);
+		}
+		catch(Exception e) { aD=0.0;}
+
+		if( opTxt.equals("!") )
+			s=solveFactorial(before);
+		else if( opTxt.equals("^") )
+			s=solveExponential(bD,aD);
+		else if( parenOpQ)
+			s=solveParenOp(opTxt, aD, inRadians);
+		else
+			s=this.solveMDAS(bD, aD,opTxt);
+		
+		return s;
+	}
 	
 	public SimpleAnswer solveFactorial(String str){ //from in[0]
 		int outNum;
@@ -21,6 +47,7 @@ public class Evaluator {
 			for(int i=2;i<=num;i++)
 				outNum=outNum*i;
 			s.i= outNum;
+			s.s= String.valueOf(outNum);
 		}
 		catch(Exception e){
 			s.errorQ=true;
@@ -36,6 +63,7 @@ public class Evaluator {
 		// this needs an error checker
 		outNum=Math.pow(baseNum,pwr);
 		s.d=outNum;
+		s.s=String.valueOf(outNum);
 		return s;
 	}
 	
@@ -58,6 +86,9 @@ public class Evaluator {
 			s.d=one-two;
 		else
 			s.errorQ=true;
+		
+		if(!s.errorQ)
+			s.s=String.valueOf(s.d);
 		return s;
 		
 	}
@@ -73,40 +104,61 @@ public class Evaluator {
 		SimpleAnswer s=new SimpleAnswer();
 		s.errorQ=false;
 		double d;
-		//System.out.println("solving parenOp: oper="+trigFn+", arg="+arg);
 		
 		try{
 			if(trigFn.equalsIgnoreCase("sin"))
 				d=Math.sin(radArg);
 			else if(trigFn.equalsIgnoreCase("cos"))
 				d=Math.cos(radArg);
-			else if(trigFn.equalsIgnoreCase("tan"))
+			else if(trigFn.equalsIgnoreCase("tan")) {
 				d=Math.tan(radArg);
+				//System.out.println(d);
+			}
 			else if(trigFn.equalsIgnoreCase("csc"))
-				d=1/Math.sin(radArg);
+				d=1.0/Math.sin(radArg);
 			else if(trigFn.equalsIgnoreCase("sec"))
-				d=1/Math.cos(radArg);
+				d=1.0/Math.cos(radArg);
 			else if(trigFn.equalsIgnoreCase("cot"))
-				d=1/Math.tan(radArg);
-			else if(trigFn.equalsIgnoreCase("asin"))
-				d=Math.asin(radArg);
-			else if(trigFn.equalsIgnoreCase("acos"))
-				d=Math.acos(radArg);
-			else if(trigFn.equalsIgnoreCase("atan"))
-				d=Math.atan(radArg);
-			else if(trigFn.equalsIgnoreCase("acsc"))
-				d=Math.asin(1/radArg);
-			else if(trigFn.equalsIgnoreCase("asec"))
-				d=Math.acos(1/radArg);
-			else if(trigFn.equalsIgnoreCase("acot"))
-				d=Math.atan(1/radArg);
-			else if(trigFn.equalsIgnoreCase("ln"))
+				d=1.0/Math.tan(radArg);
+			else if(trigFn.equalsIgnoreCase("asin")){
+				d=Math.asin(arg);
+				if(!inRadians)
+					d=Math.toDegrees(d);
+			}
+			else if(trigFn.equalsIgnoreCase("acos")){
+				d=Math.acos(arg);
+				if(!inRadians)
+					d=Math.toDegrees(d);
+			}
+			else if(trigFn.equalsIgnoreCase("atan")){
+				d=Math.atan(arg);
+				if(!inRadians)
+					d=Math.toDegrees(d);
+			}
+			else if(trigFn.equalsIgnoreCase("acsc")){
+				d=Math.asin(1.0/arg);
+			}
+			else if(trigFn.equalsIgnoreCase("asec")){
+				d=Math.acos(1.0/arg);
+				if(!inRadians)
+					d=Math.toDegrees(d);
+			}
+			else if(trigFn.equalsIgnoreCase("acot")){
+				d=Math.atan(1.0/arg);
+				if(!inRadians)
+					d=Math.toDegrees(d);
+			}
+			else if(trigFn.equalsIgnoreCase("ln")) {
 				d=Math.log(arg);
-			else //if(trigFn.equalsIgnoreCase("log10"))
+			}
+				
+			else if(trigFn.equalsIgnoreCase("log10"))
 				d=Math.log10(arg);
+			else throw new Exception(); // throwing generic exception for now
 					
 		
 			s.d=d;
+			s.s=new BigDecimal(d).toPlainString();
 		}
 		catch(Exception e){
 			s.errorQ=true;

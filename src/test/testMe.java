@@ -2,6 +2,7 @@ package test;
 import brain.*;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class testMe {
@@ -23,7 +24,7 @@ public class testMe {
 		
 		Calculator C=new Calculator();
 		ExpressionParser EP=C.EP;
-		ParenChecker PC=C.PC;
+		// ParenChecker PC=C.PC;
 		String oper="-";
 		int[] out;
 		out=EP.findOperatorStartEnd(tempStr, oper);
@@ -31,18 +32,21 @@ public class testMe {
 		
 		tempStr="!acos(4)-3*/";
 		System.out.println("String is "+ tempStr);
-		ArrayList<PlacedOperator> POlist=EP.findAllOperatorStartEnd(tempStr);
+		List<PlacedOperator> POlist=EP.findAllOperatorStartEnd(tempStr);
 		EP.displayOperatorList(POlist);
 		int i=4; //index of operator I'm looking at
 		//EP.displayPrePost(tempStr, POlist, i);
-		System.exit(0);
+		
+		// here is where I bailed...
+		//System.exit(0);
 		String testNewInnerParen="4+cos((6+3!))/4-(4*3^2-1/(8+4!))";
-		String newInner=PC.findInnerParentheticalExpr(testNewInnerParen, 0,
-				testNewInnerParen.length()-1, EP)[4];
+		String newInner=ParenChecker.findInnerParentheticalExpr(testNewInnerParen, 0,
+				testNewInnerParen.length()-1, EP).innerString;
 		System.out.println(testNewInnerParen+"\nfirst inner is "+newInner);
 		//quit program because stuff below will be broken...
 		//System.exit(0);
 		
+		/*
 		String testFactorials="6+3!-2*5+6!-1";
 		String tfAnswer=C.solveAllFactorials(testFactorials);
 		System.out.println(tfAnswer);
@@ -63,11 +67,12 @@ public class testMe {
 		System.out.println(testAllOperations);
 		String taoAnswer=C.solveAllOperations(testAllOperations);
 		System.out.println(taoAnswer);
+		*/
 		
 		System.out.println("\nApparently we have an error here, let's have a look...");
 		String testDrillDown="(6+3!)/4-(4*3^2-1/(8+4!))";
 		System.out.println(testDrillDown);
-		String tddAnswer=C.DrillDownSolveAndSub(testDrillDown);
+		String tddAnswer=C.NewDrillDownSolveAndSub(testDrillDown);
 		System.out.println(tddAnswer);
 		System.out.println("solving by steps...");
 		C.stepQ=true;
@@ -75,7 +80,7 @@ public class testMe {
 		do{
 			POlist=EP.findAllOperatorStartEnd(tddAnswer);
 			//EP.displayOperatorList(POlist);
-			tddAnswer=C.DrillDownSolveAndSub(tddAnswer);
+			tddAnswer=C.NewDrillDownSolveAndSub(tddAnswer);
 			System.out.println(tddAnswer);
 		}
 		while(POlist.size()>0);
@@ -87,7 +92,7 @@ public class testMe {
 		//C.solveFirstTrig(testTrig); //this will print arg of first trig fn
 		System.out.println("\nsolving all trig...");
 		//C.solveAllOperations("0.6264457718885821/4-(4*3^2-1/0.8342233605065102)");
-		String trigAnswer=C.DrillDownSolveAndSub(testTrig);
+		String trigAnswer=C.NewDrillDownSolveAndSub(testTrig);
 		System.out.println(trigAnswer);
 		//System.exit(0);
 		System.out.println("solving all trig by steps...");
@@ -96,10 +101,21 @@ public class testMe {
 		do{
 			POlist=EP.findAllOperatorStartEnd(trigAnswer);
 			//EP.displayOperatorList(POlist);
-			trigAnswer=C.DrillDownSolveAndSub(trigAnswer);
+			trigAnswer=C.NewDrillDownSolveAndSub(trigAnswer);
 			System.out.println(trigAnswer);
 		}
 		while(POlist.size()>0);
+		
+		System.out.println("Okay, I'm having trouble with inverse trig fns and logs...");
+		String expr="acsc(4)+ln(55)";
+		List<PlacedOperator> POlist2=EP.findAllOperatorStartEnd(expr);
+		EP.displayOperatorList(POlist2);
+		C.stepQ=true;
+		String answer = C.solveStep(expr);
+		System.out.println(answer);
+		double d=4;
+		System.out.println("When I dial direct, ln(.25)="+Math.log(d));
+		System.out.println("arcsin 1/4="+Math.asin(1.0/d));
 		
 		
 		/*

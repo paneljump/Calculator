@@ -1,5 +1,10 @@
 package brain;
 
+/*
+ * This is an object for passing information; it has no internal processing.
+ * It makes room for multiple data types, mostly primitives.
+ */
+
 public class SimpleAnswer {
 	public boolean errorQ;
 	public double d;

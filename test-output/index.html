@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">45 methods,   45 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="mathErrorTest(3.0, Tan 90, “tan(90)”, “16331239353195370”, This should be infinite but I guess double rounds a lit...)">mathErrorTest(3.0, Tan 90, “tan(90)”, “16331239353195370”, This should be infinite but I guess double rounds a lit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="mathErrorTest(2.0, log of negative, “ln(-2)”, “Error in computation ln(-2.0)”, null)">mathErrorTest(2.0, log of negative, “ln(-2)”, “Error in computation ln(-2.0)”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="mathErrorTest(4.0, acsc out of range, “acsc(.25)”, “Error in computation acsc(0.25)”, null)">mathErrorTest(4.0, acsc out of range, “acsc(.25)”, “Error in computation acsc(0.25)”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="mathErrorTest(1.0, divide by 0, “5/0”, “Error: cannot divide by 0”, null)">mathErrorTest(1.0, divide by 0, “5/0”, “Error: cannot divide by 0”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveAllTest(2.0, Two operations, no parentheses, “5+3*4”, “17.0”, null)">solveAllTest(2.0, Two operations, no parentheses, “5+3*4”, “17.0”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveAllTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “32.0”, null)">solveAllTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “32.0”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveAllTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null)">solveAllTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveAllTest(3.0, Two operations, parentheses, “(5+3)*4”, “32.0”, null)">solveAllTest(3.0, Two operations, parentheses, “(5+3)*4”, “32.0”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(11.0, Order with parenOp, “cos(5*(3+24.0)-3^3)”, “cos(5*27.0-3^3)”, null)">solveStepTest(11.0, Order with parenOp, “cos(5*(3+24.0)-3^3)”, “cos(5*27.0-3^3)”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(7.0, Demonstrate order of operations:, “5*27.0-3^3”, “5*27.0-27.0”, null)">solveStepTest(7.0, Demonstrate order of operations:, “5*27.0-3^3”, “5*27.0-27.0”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(12.0, Order with parenOp, “cos(5*27.0-3^3)”, “cos(5*27.0-27.0)”, null)">solveStepTest(12.0, Order with parenOp, “cos(5*27.0-3^3)”, “cos(5*27.0-27.0)”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null)">solveStepTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “(8.0)*4”, Solve innermost and drop those pare...)">solveStepTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “(8.0)*4”, Solve innermost and drop those pare...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(10.0, Order with parenOp, “cos(5*(3+4!)-3^3)”, “cos(5*(3+24)-3^3)”, null)">solveStepTest(10.0, Order with parenOp, “cos(5*(3+4!)-3^3)”, “cos(5*(3+24)-3^3)”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(5.0, Demonstrate order of operations:, “5*(3+4!)-3^3”, “5*(3+24)-3^3”, NOTE: factorials make integer...)">solveStepTest(5.0, Demonstrate order of operations:, “5*(3+4!)-3^3”, “5*(3+24)-3^3”, NOTE: factorials make integer...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(3.0, Two operations, parentheses, “(5+3)*4”, “8.0*4”, null)">solveStepTest(3.0, Two operations, parentheses, “(5+3)*4”, “8.0*4”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(9.0, Demonstrate order of operations:, “135.0-27.0”, “108.0”, null)">solveStepTest(9.0, Demonstrate order of operations:, “135.0-27.0”, “108.0”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(8.0, Demonstrate order of operations:, “5*27.0-27.0”, “135.0-27.0”, null)">solveStepTest(8.0, Demonstrate order of operations:, “5*27.0-27.0”, “135.0-27.0”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(13.0, Order with parenOp, “cos(60)”, “0.50000000000000011102230246251565404236316680908203125”, WARN...)">solveStepTest(13.0, Order with parenOp, “cos(60)”, “0.50000000000000011102230246251565404236316680908203125”, WARN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(6.0, Demonstrate order of operations:, “5*(3+24.0)-3^3”, “5*27.0-3^3”, null)">solveStepTest(6.0, Demonstrate order of operations:, “5*(3+24.0)-3^3”, “5*27.0-3^3”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="solveStepTest(2.0, Two operations, no parentheses, “5+3*4”, “5+12.0”, converts from int to double and then back to...)">solveStepTest(2.0, Two operations, no parentheses, “5+3*4”, “5+12.0”, converts from int to double and then back to...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(5.0, Expression with a parentheses operator that does NOT contain operators, “5+3*4-sin(45)”, “45”, ...)">stepInTest(5.0, Expression with a parentheses operator that does NOT contain operators, “5+3*4-sin(45)”, “45”, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(10.0, Nested parentheses inside paren op, “5+3*4-sin((45))”, “(45)”, null)">stepInTest(10.0, Nested parentheses inside paren op, “5+3*4-sin((45))”, “(45)”, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(6.0, Expression with a parentheses operator where parenOp also contains an operator, “5+3*4-sin(5!)”...)">stepInTest(6.0, Expression with a parentheses operator where parenOp also contains an operator, “5+3*4-sin(5!)”...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(2.0, parentheses surrounding entire expression, “(5+3*4)”, “5+3*4”, remove outer parentheses)">stepInTest(2.0, parentheses surrounding entire expression, “(5+3*4)”, “5+3*4”, remove outer parentheses)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(3.0, parentheses surrounding part of expression, “(5+3)*4”, “5+3”, step in)">stepInTest(3.0, parentheses surrounding part of expression, “(5+3)*4”, “5+3”, step in)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(4.0, nested parentheses, “((5+3)*4)^2”, “(5+3)*4”, step in)">stepInTest(4.0, nested parentheses, “((5+3)*4)^2”, “(5+3)*4”, step in)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(9.0, Expression with mix of parentheses operators, “5+3*4-sin(45)+cos(5!)”, “45”, step in)">stepInTest(9.0, Expression with mix of parentheses operators, “5+3*4-sin(45)+cos(5!)”, “45”, step in)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(8.0, Expression with mix of parentheses operators, “5+3*4-sin(5!)+cos(45)”, “5!”, step in)">stepInTest(8.0, Expression with mix of parentheses operators, “5+3*4-sin(5!)+cos(45)”, “5!”, step in)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(7.0, Expression with multiple parentheses operators, “5+3*4-sin(60)+cos(45)”, “60”, step in)">stepInTest(7.0, Expression with multiple parentheses operators, “5+3*4-sin(60)+cos(45)”, “60”, step in)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stepInTest(1.0, no parentheses, “5+3*4”, “5+3*4”, no change)">stepInTest(1.0, no parentheses, “5+3*4”, “5+3*4”, no change)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(10.0, Expression with extra closed parentheses, returns index of unmatched &#039;)&#039;, “(5+3)*4)”, 7.0, par...)">stringValidTest(10.0, Expression with extra closed parentheses, returns index of unmatched ')', “(5+3)*4)”, 7.0, par...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(3.0, Proper parentheses with more string at end, “(5+3)*4”, -1.0, parentheses)">stringValidTest(3.0, Proper parentheses with more string at end, “(5+3)*4”, -1.0, parentheses)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(5.0, Proper parentheses with string before and after, “5+(3*4)/2”, -1.0, parentheses)">stringValidTest(5.0, Proper parentheses with string before and after, “5+(3*4)/2”, -1.0, parentheses)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(7.0, Expression with no closed parentheses should return index of unmatched &#039;(&#039;, “(5+3*4”, 0.0, pare...)">stringValidTest(7.0, Expression with no closed parentheses should return index of unmatched '(', “(5+3*4”, 0.0, pare...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(6.0, Proper parentheses nested, “(5+(3))*4”, -1.0, parentheses)">stringValidTest(6.0, Proper parentheses nested, “(5+(3))*4”, -1.0, parentheses)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(1.0, Expression with no parentheses should give no parentheses error (-1), “5+3*4”, -1.0, parenthese...)">stringValidTest(1.0, Expression with no parentheses should give no parentheses error (-1), “5+3*4”, -1.0, parenthese...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(4.0, Proper parentheses with more string at beginning, “5+(3*4)”, -1.0, parentheses)">stringValidTest(4.0, Proper parentheses with more string at beginning, “5+(3*4)”, -1.0, parentheses)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(13.0, Expression with invalid characters, should return index of first invalid, “5@+3$”, 1.0, charac...)">stringValidTest(13.0, Expression with invalid characters, should return index of first invalid, “5@+3$”, 1.0, charac...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(14.0, Empty string, “”, -1.0, empty)">stringValidTest(14.0, Empty string, “”, -1.0, empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(9.0, Expression with extra open parentheses, returns index of unmatched &#039;(&#039;, “(5+3)*(4”, 6.0, parent...)">stringValidTest(9.0, Expression with extra open parentheses, returns index of unmatched '(', “(5+3)*(4”, 6.0, parent...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(8.0, Expression with no open parentheses, should return index of unmatched &#039;)&#039;, “5+3)*4”, 3.0, paren...)">stringValidTest(8.0, Expression with no open parentheses, should return index of unmatched ')', “5+3)*4”, 3.0, paren...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(2.0, Proper parentheses surrounding string, “(5+3*4)”, -1.0, parentheses)">stringValidTest(2.0, Proper parentheses surrounding string, “(5+3*4)”, -1.0, parentheses)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(12.0, Expression with invalid characters, should return index of first invalid, “5+3$”, 3.0, charact...)">stringValidTest(12.0, Expression with invalid characters, should return index of first invalid, “5+3$”, 3.0, charact...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestBrain" hash-for-method="stringValidTest(11.0, Expression with extra open parentheses, nested, returns index of unmatched &#039;(&#039;, “(5+3()*4”, 0....)">stringValidTest(11.0, Expression with extra open parentheses, nested, returns index of unmatched '(', “(5+3()*4”, 0....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TestBrain</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mathErrorTest(3.0, Tan 90, “tan(90)”, “16331239353195370”, This should be infinite but I guess double rounds a lit...)">
+                  </a> <!-- mathErrorTest(3.0, Tan 90, “tan(90)”, “16331239353195370”, This should be infinite but I guess double rounds a lit...) -->
+                  <span class="method-name">mathErrorTest</span>
+                  <span class="parameters">(3.0, Tan 90, “tan(90)”, “16331239353195370”, This should be infinite but I guess double rounds a little)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mathErrorTest(2.0, log of negative, “ln(-2)”, “Error in computation ln(-2.0)”, null)">
+                  </a> <!-- mathErrorTest(2.0, log of negative, “ln(-2)”, “Error in computation ln(-2.0)”, null) -->
+                  <span class="method-name">mathErrorTest</span>
+                  <span class="parameters">(2.0, log of negative, “ln(-2)”, “Error in computation ln(-2.0)”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mathErrorTest(4.0, acsc out of range, “acsc(.25)”, “Error in computation acsc(0.25)”, null)">
+                  </a> <!-- mathErrorTest(4.0, acsc out of range, “acsc(.25)”, “Error in computation acsc(0.25)”, null) -->
+                  <span class="method-name">mathErrorTest</span>
+                  <span class="parameters">(4.0, acsc out of range, “acsc(.25)”, “Error in computation acsc(0.25)”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mathErrorTest(1.0, divide by 0, “5/0”, “Error: cannot divide by 0”, null)">
+                  </a> <!-- mathErrorTest(1.0, divide by 0, “5/0”, “Error: cannot divide by 0”, null) -->
+                  <span class="method-name">mathErrorTest</span>
+                  <span class="parameters">(1.0, divide by 0, “5/0”, “Error: cannot divide by 0”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveAllTest(2.0, Two operations, no parentheses, “5+3*4”, “17.0”, null)">
+                  </a> <!-- solveAllTest(2.0, Two operations, no parentheses, “5+3*4”, “17.0”, null) -->
+                  <span class="method-name">solveAllTest</span>
+                  <span class="parameters">(2.0, Two operations, no parentheses, “5+3*4”, “17.0”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveAllTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “32.0”, null)">
+                  </a> <!-- solveAllTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “32.0”, null) -->
+                  <span class="method-name">solveAllTest</span>
+                  <span class="parameters">(4.0, Two operations, nested parentheses, “((5+3))*4”, “32.0”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveAllTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null)">
+                  </a> <!-- solveAllTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null) -->
+                  <span class="method-name">solveAllTest</span>
+                  <span class="parameters">(1.0, Simplest test – one operation, “5+3”, “8.0”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveAllTest(3.0, Two operations, parentheses, “(5+3)*4”, “32.0”, null)">
+                  </a> <!-- solveAllTest(3.0, Two operations, parentheses, “(5+3)*4”, “32.0”, null) -->
+                  <span class="method-name">solveAllTest</span>
+                  <span class="parameters">(3.0, Two operations, parentheses, “(5+3)*4”, “32.0”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(11.0, Order with parenOp, “cos(5*(3+24.0)-3^3)”, “cos(5*27.0-3^3)”, null)">
+                  </a> <!-- solveStepTest(11.0, Order with parenOp, “cos(5*(3+24.0)-3^3)”, “cos(5*27.0-3^3)”, null) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(11.0, Order with parenOp, “cos(5*(3+24.0)-3^3)”, “cos(5*27.0-3^3)”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(7.0, Demonstrate order of operations:, “5*27.0-3^3”, “5*27.0-27.0”, null)">
+                  </a> <!-- solveStepTest(7.0, Demonstrate order of operations:, “5*27.0-3^3”, “5*27.0-27.0”, null) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(7.0, Demonstrate order of operations:, “5*27.0-3^3”, “5*27.0-27.0”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(12.0, Order with parenOp, “cos(5*27.0-3^3)”, “cos(5*27.0-27.0)”, null)">
+                  </a> <!-- solveStepTest(12.0, Order with parenOp, “cos(5*27.0-3^3)”, “cos(5*27.0-27.0)”, null) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(12.0, Order with parenOp, “cos(5*27.0-3^3)”, “cos(5*27.0-27.0)”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null)">
+                  </a> <!-- solveStepTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(1.0, Simplest test – one operation, “5+3”, “8.0”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “(8.0)*4”, Solve innermost and drop those pare...)">
+                  </a> <!-- solveStepTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “(8.0)*4”, Solve innermost and drop those pare...) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(4.0, Two operations, nested parentheses, “((5+3))*4”, “(8.0)*4”, Solve innermost and drop those parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(10.0, Order with parenOp, “cos(5*(3+4!)-3^3)”, “cos(5*(3+24)-3^3)”, null)">
+                  </a> <!-- solveStepTest(10.0, Order with parenOp, “cos(5*(3+4!)-3^3)”, “cos(5*(3+24)-3^3)”, null) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(10.0, Order with parenOp, “cos(5*(3+4!)-3^3)”, “cos(5*(3+24)-3^3)”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(5.0, Demonstrate order of operations:, “5*(3+4!)-3^3”, “5*(3+24)-3^3”, NOTE: factorials make integer...)">
+                  </a> <!-- solveStepTest(5.0, Demonstrate order of operations:, “5*(3+4!)-3^3”, “5*(3+24)-3^3”, NOTE: factorials make integer...) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(5.0, Demonstrate order of operations:, “5*(3+4!)-3^3”, “5*(3+24)-3^3”, NOTE: factorials make integers, not doubles (no decimal))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(3.0, Two operations, parentheses, “(5+3)*4”, “8.0*4”, null)">
+                  </a> <!-- solveStepTest(3.0, Two operations, parentheses, “(5+3)*4”, “8.0*4”, null) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(3.0, Two operations, parentheses, “(5+3)*4”, “8.0*4”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(9.0, Demonstrate order of operations:, “135.0-27.0”, “108.0”, null)">
+                  </a> <!-- solveStepTest(9.0, Demonstrate order of operations:, “135.0-27.0”, “108.0”, null) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(9.0, Demonstrate order of operations:, “135.0-27.0”, “108.0”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(8.0, Demonstrate order of operations:, “5*27.0-27.0”, “135.0-27.0”, null)">
+                  </a> <!-- solveStepTest(8.0, Demonstrate order of operations:, “5*27.0-27.0”, “135.0-27.0”, null) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(8.0, Demonstrate order of operations:, “5*27.0-27.0”, “135.0-27.0”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(13.0, Order with parenOp, “cos(60)”, “0.50000000000000011102230246251565404236316680908203125”, WARN...)">
+                  </a> <!-- solveStepTest(13.0, Order with parenOp, “cos(60)”, “0.50000000000000011102230246251565404236316680908203125”, WARN...) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(13.0, Order with parenOp, “cos(60)”, “0.50000000000000011102230246251565404236316680908203125”, WARNING: doubles lose precision...will this, or its string interpretation, vary by system?)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(6.0, Demonstrate order of operations:, “5*(3+24.0)-3^3”, “5*27.0-3^3”, null)">
+                  </a> <!-- solveStepTest(6.0, Demonstrate order of operations:, “5*(3+24.0)-3^3”, “5*27.0-3^3”, null) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(6.0, Demonstrate order of operations:, “5*(3+24.0)-3^3”, “5*27.0-3^3”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="solveStepTest(2.0, Two operations, no parentheses, “5+3*4”, “5+12.0”, converts from int to double and then back to...)">
+                  </a> <!-- solveStepTest(2.0, Two operations, no parentheses, “5+3*4”, “5+12.0”, converts from int to double and then back to...) -->
+                  <span class="method-name">solveStepTest</span>
+                  <span class="parameters">(2.0, Two operations, no parentheses, “5+3*4”, “5+12.0”, converts from int to double and then back to string)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(5.0, Expression with a parentheses operator that does NOT contain operators, “5+3*4-sin(45)”, “45”, ...)">
+                  </a> <!-- stepInTest(5.0, Expression with a parentheses operator that does NOT contain operators, “5+3*4-sin(45)”, “45”, ...) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(5.0, Expression with a parentheses operator that does NOT contain operators, “5+3*4-sin(45)”, “45”, step in)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(10.0, Nested parentheses inside paren op, “5+3*4-sin((45))”, “(45)”, null)">
+                  </a> <!-- stepInTest(10.0, Nested parentheses inside paren op, “5+3*4-sin((45))”, “(45)”, null) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(10.0, Nested parentheses inside paren op, “5+3*4-sin((45))”, “(45)”, null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(6.0, Expression with a parentheses operator where parenOp also contains an operator, “5+3*4-sin(5!)”...)">
+                  </a> <!-- stepInTest(6.0, Expression with a parentheses operator where parenOp also contains an operator, “5+3*4-sin(5!)”...) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(6.0, Expression with a parentheses operator where parenOp also contains an operator, “5+3*4-sin(5!)”, “5!”, step in)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(2.0, parentheses surrounding entire expression, “(5+3*4)”, “5+3*4”, remove outer parentheses)">
+                  </a> <!-- stepInTest(2.0, parentheses surrounding entire expression, “(5+3*4)”, “5+3*4”, remove outer parentheses) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(2.0, parentheses surrounding entire expression, “(5+3*4)”, “5+3*4”, remove outer parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(3.0, parentheses surrounding part of expression, “(5+3)*4”, “5+3”, step in)">
+                  </a> <!-- stepInTest(3.0, parentheses surrounding part of expression, “(5+3)*4”, “5+3”, step in) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(3.0, parentheses surrounding part of expression, “(5+3)*4”, “5+3”, step in)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(4.0, nested parentheses, “((5+3)*4)^2”, “(5+3)*4”, step in)">
+                  </a> <!-- stepInTest(4.0, nested parentheses, “((5+3)*4)^2”, “(5+3)*4”, step in) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(4.0, nested parentheses, “((5+3)*4)^2”, “(5+3)*4”, step in)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(9.0, Expression with mix of parentheses operators, “5+3*4-sin(45)+cos(5!)”, “45”, step in)">
+                  </a> <!-- stepInTest(9.0, Expression with mix of parentheses operators, “5+3*4-sin(45)+cos(5!)”, “45”, step in) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(9.0, Expression with mix of parentheses operators, “5+3*4-sin(45)+cos(5!)”, “45”, step in)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(8.0, Expression with mix of parentheses operators, “5+3*4-sin(5!)+cos(45)”, “5!”, step in)">
+                  </a> <!-- stepInTest(8.0, Expression with mix of parentheses operators, “5+3*4-sin(5!)+cos(45)”, “5!”, step in) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(8.0, Expression with mix of parentheses operators, “5+3*4-sin(5!)+cos(45)”, “5!”, step in)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(7.0, Expression with multiple parentheses operators, “5+3*4-sin(60)+cos(45)”, “60”, step in)">
+                  </a> <!-- stepInTest(7.0, Expression with multiple parentheses operators, “5+3*4-sin(60)+cos(45)”, “60”, step in) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(7.0, Expression with multiple parentheses operators, “5+3*4-sin(60)+cos(45)”, “60”, step in)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stepInTest(1.0, no parentheses, “5+3*4”, “5+3*4”, no change)">
+                  </a> <!-- stepInTest(1.0, no parentheses, “5+3*4”, “5+3*4”, no change) -->
+                  <span class="method-name">stepInTest</span>
+                  <span class="parameters">(1.0, no parentheses, “5+3*4”, “5+3*4”, no change)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(10.0, Expression with extra closed parentheses, returns index of unmatched &#039;)&#039;, “(5+3)*4)”, 7.0, par...)">
+                  </a> <!-- stringValidTest(10.0, Expression with extra closed parentheses, returns index of unmatched ')', “(5+3)*4)”, 7.0, par...) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(10.0, Expression with extra closed parentheses, returns index of unmatched ')', “(5+3)*4)”, 7.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(3.0, Proper parentheses with more string at end, “(5+3)*4”, -1.0, parentheses)">
+                  </a> <!-- stringValidTest(3.0, Proper parentheses with more string at end, “(5+3)*4”, -1.0, parentheses) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(3.0, Proper parentheses with more string at end, “(5+3)*4”, -1.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(5.0, Proper parentheses with string before and after, “5+(3*4)/2”, -1.0, parentheses)">
+                  </a> <!-- stringValidTest(5.0, Proper parentheses with string before and after, “5+(3*4)/2”, -1.0, parentheses) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(5.0, Proper parentheses with string before and after, “5+(3*4)/2”, -1.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(7.0, Expression with no closed parentheses should return index of unmatched &#039;(&#039;, “(5+3*4”, 0.0, pare...)">
+                  </a> <!-- stringValidTest(7.0, Expression with no closed parentheses should return index of unmatched '(', “(5+3*4”, 0.0, pare...) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(7.0, Expression with no closed parentheses should return index of unmatched '(', “(5+3*4”, 0.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(6.0, Proper parentheses nested, “(5+(3))*4”, -1.0, parentheses)">
+                  </a> <!-- stringValidTest(6.0, Proper parentheses nested, “(5+(3))*4”, -1.0, parentheses) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(6.0, Proper parentheses nested, “(5+(3))*4”, -1.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(1.0, Expression with no parentheses should give no parentheses error (-1), “5+3*4”, -1.0, parenthese...)">
+                  </a> <!-- stringValidTest(1.0, Expression with no parentheses should give no parentheses error (-1), “5+3*4”, -1.0, parenthese...) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(1.0, Expression with no parentheses should give no parentheses error (-1), “5+3*4”, -1.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(4.0, Proper parentheses with more string at beginning, “5+(3*4)”, -1.0, parentheses)">
+                  </a> <!-- stringValidTest(4.0, Proper parentheses with more string at beginning, “5+(3*4)”, -1.0, parentheses) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(4.0, Proper parentheses with more string at beginning, “5+(3*4)”, -1.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(13.0, Expression with invalid characters, should return index of first invalid, “5@+3$”, 1.0, charac...)">
+                  </a> <!-- stringValidTest(13.0, Expression with invalid characters, should return index of first invalid, “5@+3$”, 1.0, charac...) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(13.0, Expression with invalid characters, should return index of first invalid, “5@+3$”, 1.0, characters)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(14.0, Empty string, “”, -1.0, empty)">
+                  </a> <!-- stringValidTest(14.0, Empty string, “”, -1.0, empty) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(14.0, Empty string, “”, -1.0, empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(9.0, Expression with extra open parentheses, returns index of unmatched &#039;(&#039;, “(5+3)*(4”, 6.0, parent...)">
+                  </a> <!-- stringValidTest(9.0, Expression with extra open parentheses, returns index of unmatched '(', “(5+3)*(4”, 6.0, parent...) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(9.0, Expression with extra open parentheses, returns index of unmatched '(', “(5+3)*(4”, 6.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(8.0, Expression with no open parentheses, should return index of unmatched &#039;)&#039;, “5+3)*4”, 3.0, paren...)">
+                  </a> <!-- stringValidTest(8.0, Expression with no open parentheses, should return index of unmatched ')', “5+3)*4”, 3.0, paren...) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(8.0, Expression with no open parentheses, should return index of unmatched ')', “5+3)*4”, 3.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(2.0, Proper parentheses surrounding string, “(5+3*4)”, -1.0, parentheses)">
+                  </a> <!-- stringValidTest(2.0, Proper parentheses surrounding string, “(5+3*4)”, -1.0, parentheses) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(2.0, Proper parentheses surrounding string, “(5+3*4)”, -1.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(12.0, Expression with invalid characters, should return index of first invalid, “5+3$”, 3.0, charact...)">
+                  </a> <!-- stringValidTest(12.0, Expression with invalid characters, should return index of first invalid, “5+3$”, 3.0, charact...) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(12.0, Expression with invalid characters, should return index of first invalid, “5+3$”, 3.0, characters)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stringValidTest(11.0, Expression with extra open parentheses, nested, returns index of unmatched &#039;(&#039;, “(5+3()*4”, 0....)">
+                  </a> <!-- stringValidTest(11.0, Expression with extra open parentheses, nested, returns index of unmatched '(', “(5+3()*4”, 0....) -->
+                  <span class="method-name">stringValidTest</span>
+                  <span class="parameters">(11.0, Expression with extra open parentheses, nested, returns index of unmatched '(', “(5+3()*4”, 0.0, parentheses)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/6w/w8fz814578n9m2y7zq7f4jch0000gn/T/testng-eclipse-1592874311/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.TestBrain&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(45);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'mathErrorTest')
+data.setCell(0, 2, 'test.TestBrain')
+data.setCell(0, 3, 143);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'mathErrorTest')
+data.setCell(1, 2, 'test.TestBrain')
+data.setCell(1, 3, 99);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'mathErrorTest')
+data.setCell(2, 2, 'test.TestBrain')
+data.setCell(2, 3, 30);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'mathErrorTest')
+data.setCell(3, 2, 'test.TestBrain')
+data.setCell(3, 3, 9);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'stringValidTest')
+data.setCell(4, 2, 'test.TestBrain')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'solveStepTest')
+data.setCell(5, 2, 'test.TestBrain')
+data.setCell(5, 3, 2);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'stepInTest')
+data.setCell(6, 2, 'test.TestBrain')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'solveStepTest')
+data.setCell(7, 2, 'test.TestBrain')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'stringValidTest')
+data.setCell(8, 2, 'test.TestBrain')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'stepInTest')
+data.setCell(9, 2, 'test.TestBrain')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'solveStepTest')
+data.setCell(10, 2, 'test.TestBrain')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'stepInTest')
+data.setCell(11, 2, 'test.TestBrain')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'solveStepTest')
+data.setCell(12, 2, 'test.TestBrain')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'stepInTest')
+data.setCell(13, 2, 'test.TestBrain')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'stringValidTest')
+data.setCell(14, 2, 'test.TestBrain')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'stepInTest')
+data.setCell(15, 2, 'test.TestBrain')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'stepInTest')
+data.setCell(16, 2, 'test.TestBrain')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'stringValidTest')
+data.setCell(17, 2, 'test.TestBrain')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'solveStepTest')
+data.setCell(18, 2, 'test.TestBrain')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'solveStepTest')
+data.setCell(19, 2, 'test.TestBrain')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'solveAllTest')
+data.setCell(20, 2, 'test.TestBrain')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'solveAllTest')
+data.setCell(21, 2, 'test.TestBrain')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'stepInTest')
+data.setCell(22, 2, 'test.TestBrain')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'stepInTest')
+data.setCell(23, 2, 'test.TestBrain')
+data.setCell(23, 3, 1);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'solveAllTest')
+data.setCell(24, 2, 'test.TestBrain')
+data.setCell(24, 3, 1);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'solveStepTest')
+data.setCell(25, 2, 'test.TestBrain')
+data.setCell(25, 3, 1);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'solveStepTest')
+data.setCell(26, 2, 'test.TestBrain')
+data.setCell(26, 3, 1);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'solveStepTest')
+data.setCell(27, 2, 'test.TestBrain')
+data.setCell(27, 3, 1);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'stepInTest')
+data.setCell(28, 2, 'test.TestBrain')
+data.setCell(28, 3, 1);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'solveAllTest')
+data.setCell(29, 2, 'test.TestBrain')
+data.setCell(29, 3, 1);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'solveStepTest')
+data.setCell(30, 2, 'test.TestBrain')
+data.setCell(30, 3, 1);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'stepInTest')
+data.setCell(31, 2, 'test.TestBrain')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'stringValidTest')
+data.setCell(32, 2, 'test.TestBrain')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'solveStepTest')
+data.setCell(33, 2, 'test.TestBrain')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'stringValidTest')
+data.setCell(34, 2, 'test.TestBrain')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'stringValidTest')
+data.setCell(35, 2, 'test.TestBrain')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'stringValidTest')
+data.setCell(36, 2, 'test.TestBrain')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'stringValidTest')
+data.setCell(37, 2, 'test.TestBrain')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'solveStepTest')
+data.setCell(38, 2, 'test.TestBrain')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'solveStepTest')
+data.setCell(39, 2, 'test.TestBrain')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'stringValidTest')
+data.setCell(40, 2, 'test.TestBrain')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'stringValidTest')
+data.setCell(41, 2, 'test.TestBrain')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'stringValidTest')
+data.setCell(42, 2, 'test.TestBrain')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'stringValidTest')
+data.setCell(43, 2, 'test.TestBrain')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'stringValidTest')
+data.setCell(44, 2, 'test.TestBrain')
+data.setCell(44, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 314 ms</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TestBrain</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">mathErrorTest(1.0, divide by 0, “5/0”, “Error: cannot divide by 0”, null)</span>
+                <span class="method-start">2611 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mathErrorTest(2.0, log of negative, “ln(-2)”, “Error in computation ln(-2.0)”, null)</span>
+                <span class="method-start">2784 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mathErrorTest(3.0, Tan 90, “tan(90)”, “16331239353195370”, This should be infinite but I guess double rounds a lit...)</span>
+                <span class="method-start">2885 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mathErrorTest(4.0, acsc out of range, “acsc(.25)”, “Error in computation acsc(0.25)”, null)</span>
+                <span class="method-start">2916 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveAllTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null)</span>
+                <span class="method-start">2927 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveAllTest(2.0, Two operations, no parentheses, “5+3*4”, “17.0”, null)</span>
+                <span class="method-start">2929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveAllTest(3.0, Two operations, parentheses, “(5+3)*4”, “32.0”, null)</span>
+                <span class="method-start">2931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveAllTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “32.0”, null)</span>
+                <span class="method-start">2933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(1.0, Simplest test – one operation, “5+3”, “8.0”, null)</span>
+                <span class="method-start">2936 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(2.0, Two operations, no parentheses, “5+3*4”, “5+12.0”, converts from int to double and then back to...)</span>
+                <span class="method-start">2938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(3.0, Two operations, parentheses, “(5+3)*4”, “8.0*4”, null)</span>
+                <span class="method-start">2940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(4.0, Two operations, nested parentheses, “((5+3))*4”, “(8.0)*4”, Solve innermost and drop those pare...)</span>
+                <span class="method-start">2942 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(5.0, Demonstrate order of operations:, “5*(3+4!)-3^3”, “5*(3+24)-3^3”, NOTE: factorials make integer...)</span>
+                <span class="method-start">2943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(6.0, Demonstrate order of operations:, “5*(3+24.0)-3^3”, “5*27.0-3^3”, null)</span>
+                <span class="method-start">2945 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(7.0, Demonstrate order of operations:, “5*27.0-3^3”, “5*27.0-27.0”, null)</span>
+                <span class="method-start">2948 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(8.0, Demonstrate order of operations:, “5*27.0-27.0”, “135.0-27.0”, null)</span>
+                <span class="method-start">2951 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(9.0, Demonstrate order of operations:, “135.0-27.0”, “108.0”, null)</span>
+                <span class="method-start">2952 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(10.0, Order with parenOp, “cos(5*(3+4!)-3^3)”, “cos(5*(3+24)-3^3)”, null)</span>
+                <span class="method-start">2954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(11.0, Order with parenOp, “cos(5*(3+24.0)-3^3)”, “cos(5*27.0-3^3)”, null)</span>
+                <span class="method-start">2955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(12.0, Order with parenOp, “cos(5*27.0-3^3)”, “cos(5*27.0-27.0)”, null)</span>
+                <span class="method-start">2956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">solveStepTest(13.0, Order with parenOp, “cos(60)”, “0.50000000000000011102230246251565404236316680908203125”, WARN...)</span>
+                <span class="method-start">2958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(1.0, no parentheses, “5+3*4”, “5+3*4”, no change)</span>
+                <span class="method-start">2961 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(2.0, parentheses surrounding entire expression, “(5+3*4)”, “5+3*4”, remove outer parentheses)</span>
+                <span class="method-start">2962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(3.0, parentheses surrounding part of expression, “(5+3)*4”, “5+3”, step in)</span>
+                <span class="method-start">2963 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(4.0, nested parentheses, “((5+3)*4)^2”, “(5+3)*4”, step in)</span>
+                <span class="method-start">2964 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(5.0, Expression with a parentheses operator that does NOT contain operators, “5+3*4-sin(45)”, “45”, ...)</span>
+                <span class="method-start">2965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(6.0, Expression with a parentheses operator where parenOp also contains an operator, “5+3*4-sin(5!)”...)</span>
+                <span class="method-start">2966 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(7.0, Expression with multiple parentheses operators, “5+3*4-sin(60)+cos(45)”, “60”, step in)</span>
+                <span class="method-start">2971 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(8.0, Expression with mix of parentheses operators, “5+3*4-sin(5!)+cos(45)”, “5!”, step in)</span>
+                <span class="method-start">2972 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(9.0, Expression with mix of parentheses operators, “5+3*4-sin(45)+cos(5!)”, “45”, step in)</span>
+                <span class="method-start">2973 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stepInTest(10.0, Nested parentheses inside paren op, “5+3*4-sin((45))”, “(45)”, null)</span>
+                <span class="method-start">2974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(1.0, Expression with no parentheses should give no parentheses error (-1), “5+3*4”, -1.0, parenthese...)</span>
+                <span class="method-start">2976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(2.0, Proper parentheses surrounding string, “(5+3*4)”, -1.0, parentheses)</span>
+                <span class="method-start">2978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(3.0, Proper parentheses with more string at end, “(5+3)*4”, -1.0, parentheses)</span>
+                <span class="method-start">2979 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(4.0, Proper parentheses with more string at beginning, “5+(3*4)”, -1.0, parentheses)</span>
+                <span class="method-start">2981 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(5.0, Proper parentheses with string before and after, “5+(3*4)/2”, -1.0, parentheses)</span>
+                <span class="method-start">2983 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(6.0, Proper parentheses nested, “(5+(3))*4”, -1.0, parentheses)</span>
+                <span class="method-start">2984 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(7.0, Expression with no closed parentheses should return index of unmatched '(', “(5+3*4”, 0.0, pare...)</span>
+                <span class="method-start">2985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(8.0, Expression with no open parentheses, should return index of unmatched ')', “5+3)*4”, 3.0, paren...)</span>
+                <span class="method-start">2986 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(9.0, Expression with extra open parentheses, returns index of unmatched '(', “(5+3)*(4”, 6.0, parent...)</span>
+                <span class="method-start">2987 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(10.0, Expression with extra closed parentheses, returns index of unmatched ')', “(5+3)*4)”, 7.0, par...)</span>
+                <span class="method-start">2988 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(11.0, Expression with extra open parentheses, nested, returns index of unmatched '(', “(5+3()*4”, 0....)</span>
+                <span class="method-start">2989 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(12.0, Expression with invalid characters, should return index of first invalid, “5+3$”, 3.0, charact...)</span>
+                <span class="method-start">2990 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(13.0, Expression with invalid characters, should return index of first invalid, “5@+3$”, 1.0, charac...)</span>
+                <span class="method-start">2991 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stringValidTest(14.0, Empty string, “”, -1.0, empty)</span>
+                <span class="method-start">2992 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

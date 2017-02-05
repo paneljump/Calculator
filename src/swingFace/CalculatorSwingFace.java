@@ -24,7 +24,22 @@ public class CalculatorSwingFace extends JFrame {
 	/**
 	 * Launch the application.
 	 */
+	
+	/*
 	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					CalculatorSwingFace frame = new CalculatorSwingFace();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+	*/
+	public static void runSwing() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -418,7 +433,7 @@ public class CalculatorSwingFace extends JFrame {
 		btnSolve.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				strBuffer=txtDisplay.getText();
-				String answer=C.DrillDownSolveAndSub(txtDisplay.getText());
+				String answer=C.NewDrillDownSolveAndSub(txtDisplay.getText());
 				txtDisplay.setText(answer);
 			}
 		});

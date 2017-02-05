@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="45" passed="45">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3265" started-at="2017-02-05T05:50:26Z" finished-at="2017-02-05T05:50:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3265" started-at="2017-02-05T05:50:26Z" finished-at="2017-02-05T05:50:29Z">
+      <class name="test.TestBrain">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestBrain@3ecf72fd]" name="setUp" is-config="true" duration-ms="2561" started-at="2017-02-04T21:50:26Z" finished-at="2017-02-04T21:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="mathErrorTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="mathErrorTest" duration-ms="143" started-at="2017-02-04T21:50:29Z" data-provider="mathErrorData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[divide by 0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5/0”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“Error: cannot divide by 0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mathErrorTest -->
+        <test-method status="PASS" signature="mathErrorTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="mathErrorTest" duration-ms="99" started-at="2017-02-04T21:50:29Z" data-provider="mathErrorData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[log of negative]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“ln(-2)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“Error in computation ln(-2.0)”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mathErrorTest -->
+        <test-method status="PASS" signature="mathErrorTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="mathErrorTest" duration-ms="30" started-at="2017-02-04T21:50:29Z" data-provider="mathErrorData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tan 90]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“tan(90)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“16331239353195370”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[This should be infinite but I guess double rounds a little]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mathErrorTest -->
+        <test-method status="PASS" signature="mathErrorTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="mathErrorTest" duration-ms="9" started-at="2017-02-04T21:50:29Z" data-provider="mathErrorData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[acsc out of range]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“acsc(.25)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“Error in computation acsc(0.25)”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mathErrorTest -->
+        <test-method status="PASS" signature="solveAllTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveAllTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveAllData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Simplest test – one operation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“8.0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveAllTest -->
+        <test-method status="PASS" signature="solveAllTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveAllTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveAllData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Two operations, no parentheses]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“17.0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveAllTest -->
+        <test-method status="PASS" signature="solveAllTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveAllTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveAllData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Two operations, parentheses]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3)*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“32.0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveAllTest -->
+        <test-method status="PASS" signature="solveAllTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveAllTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveAllData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Two operations, nested parentheses]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“((5+3))*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“32.0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveAllTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Simplest test – one operation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“8.0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Two operations, no parentheses]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“5+12.0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[converts from int to double and then back to string]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Two operations, parentheses]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3)*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“8.0*4”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Two operations, nested parentheses]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“((5+3))*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“(8.0)*4”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Solve innermost and drop those parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demonstrate order of operations:]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5*(3+4!)-3^3”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“5*(3+24)-3^3”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[NOTE: factorials make integers, not doubles (no decimal)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demonstrate order of operations:]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5*(3+24.0)-3^3”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“5*27.0-3^3”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demonstrate order of operations:]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5*27.0-3^3”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“5*27.0-27.0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demonstrate order of operations:]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5*27.0-27.0”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“135.0-27.0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demonstrate order of operations:]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“135.0-27.0”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“108.0”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Order with parenOp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“cos(5*(3+4!)-3^3)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“cos(5*(3+24)-3^3)”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Order with parenOp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“cos(5*(3+24.0)-3^3)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“cos(5*27.0-3^3)”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Order with parenOp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“cos(5*27.0-3^3)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“cos(5*27.0-27.0)”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="solveStepTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="solveStepTest" duration-ms="2" started-at="2017-02-04T21:50:29Z" data-provider="solveStepData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[13.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Order with parenOp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“cos(60)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“0.50000000000000011102230246251565404236316680908203125”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[WARNING: doubles lose precision...will this, or its string interpretation, vary by system?]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- solveStepTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[no parentheses]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“5+3*4”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[no change]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[parentheses surrounding entire expression]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3*4)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“5+3*4”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[remove outer parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[parentheses surrounding part of expression]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3)*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“5+3”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[step in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nested parentheses]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“((5+3)*4)^2”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“(5+3)*4”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[step in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with a parentheses operator that does NOT contain operators]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4-sin(45)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“45”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[step in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with a parentheses operator where parenOp also contains an operator]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4-sin(5!)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“5!”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[step in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with multiple parentheses operators]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4-sin(60)+cos(45)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“60”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[step in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with mix of parentheses operators]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4-sin(5!)+cos(45)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“5!”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[step in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with mix of parentheses operators]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4-sin(45)+cos(5!)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“45”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[step in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stepInTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stepInTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stepInData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nested parentheses inside paren op]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4-sin((45))”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[“(45)”]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepInTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with no parentheses should give no parentheses error (-1)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Proper parentheses surrounding string]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3*4)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Proper parentheses with more string at end]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3)*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Proper parentheses with more string at beginning]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+(3*4)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Proper parentheses with string before and after]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+(3*4)/2”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Proper parentheses nested]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+(3))*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with no closed parentheses should return index of unmatched '(']]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with no open parentheses, should return index of unmatched ')']]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3)*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with extra open parentheses, returns index of unmatched '(']]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3)*(4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with extra closed parentheses, returns index of unmatched ')']]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3)*4)”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with extra open parentheses, nested, returns index of unmatched '(']]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“(5+3()*4”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[parentheses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="0" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with invalid characters, should return index of first invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5+3$”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[characters]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="1" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[13.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Expression with invalid characters, should return index of first invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“5@+3$”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[characters]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+        <test-method status="PASS" signature="stringValidTest(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:test.TestBrain@3ecf72fd]" name="stringValidTest" duration-ms="5" started-at="2017-02-04T21:50:29Z" data-provider="stringValidData" finished-at="2017-02-04T21:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Empty string]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[“”]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringValidTest -->
+      </class> <!-- test.TestBrain -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

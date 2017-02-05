@@ -1,0 +1,13 @@
+This project runs a Calculator object which supports parenthetical expressions, factorials, 
+powers, arithmetic expressions, trigonometric expressions, and logarithms. 
+
+To use the Calculator, run the HasMain class under runProgram.  
+
+The BrainInterface (in the "brain" package) may be regressed by running the TestBrain class, 
+located in the "test" package. This class contains data-driven TestNG tests which pull data
+from an Excel file located in the Data folder. 
+
+IMPORTANT: TestNG tests require that TestNG and/or the TestNG plugin for Eclipse be installed.
+Additionally, the class MyExcelReader, located in the "data" package, requires that all 
+necessary poi .jar files be included. They can be downloaded from https://poi.apache.org/download.html
+and added to the project as external jar files.
